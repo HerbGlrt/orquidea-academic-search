@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
@@ -119,8 +118,7 @@ const BuscaPesquisadoresEPapers: React.FC = () => {
             const personalPageUrl = urls.length > 0 ? urls[0].value : null;
 
             // Extrair resumo educacional
-            const educationSummary = orcidData['activities-summary']?.educations?.['education-summary']?.[0]?.
-              'organization'?.name || 'Não disponível';
+            const educationSummary = orcidData['activities-summary']?.educations?.['education-summary']?.[0]?.['organization']?.name || 'Não disponível';
 
             return {
               name: autor.name,
